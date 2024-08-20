@@ -1,0 +1,581 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1253,6919" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:sc1="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="828,6854" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Open Browser Automation" sap:VirtualizedContainerService.HintSize="766,6766" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence sap:VirtualizedContainerService.HintSize="704,1248" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="608,1128" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="93c272c8-1bed-44e6-83ca-b74c30d27dfb" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence sap:VirtualizedContainerService.HintSize="574,888" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Account Name' ReferenceIdx='1' Name='Account Name'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Country' ReferenceIdx='2' Name='Country'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Opportunity Owner' ReferenceIdx='3' Name='Opportunity Owner'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Stage' ReferenceIdx='4' Name='Stage'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Quantity' ReferenceIdx='5' Name='Quantity'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Unit Sales Price' ReferenceIdx='6' Name='Unit Sales Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Total Price' ReferenceIdx='7' Name='Total Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='List Price' ReferenceIdx='8' Name='List Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Account Name' attr='fulltext' /&gt;&lt;column name='Country' attr='fulltext' /&gt;&lt;column name='Opportunity Owner' attr='fulltext' /&gt;&lt;column name='Stage' attr='fulltext' /&gt;&lt;column name='Quantity' attr='fulltext' /&gt;&lt;column name='Unit Sales Price' attr='fulltext' /&gt;&lt;column name='Total Price' attr='fulltext' /&gt;&lt;column name='List Price' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="512,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="93c272c8-1bed-44e6-83ca-b74c30d27dfb" Version="V3">
+                  <uix:NExtractData.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/opportunities" DesignTimeRectangle="425, 308, 969, 721" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="08b6035a-8737-4c72-94f6-32f3e6ac0dce" InformativeScreenshot="bb37d8a4735cac0e5ac6c0f67cfa0b6c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Opportunities' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                  </uix:NExtractData.Target>
+                </uix:NExtractData>
+                <Sequence sap:VirtualizedContainerService.HintSize="512,609" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,494" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,305" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="luisfilhopastura@terra.com.br's workspace" sap:VirtualizedContainerService.HintSize="354,217" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="FilaReDesign">
+                            <ui:AddQueueItem.ItemInformation>
+                              <InArgument x:TypeArguments="x:String" x:Key="Column-0">[row(0).ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Account Name">[row(1).ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Country">[row(2).ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Opportunity Owner">[row(3).ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Stage">[row(4).ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Quantity">[row(5).ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Unit Sales Price">[row(6).ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="Total Price">[row(7).ToString]</InArgument>
+                              <InArgument x:TypeArguments="x:String" x:Key="List Price">[row(8).ToString]</InArgument>
+                            </ui:AddQueueItem.ItemInformation>
+                          </ui:AddQueueItem>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIBSURBVDhPY8ADmIGYC8IkA6gp8KgHuUjZQLnEgYaGBv2ioiIVEDsvWjkqP0a5AMSOjIyUbGtrswSx8YI17f3rN23YOGdVZWvW9u78f/snZ//f1tTXu2HDhpbV3ZP3Q5XhBnvbJ0+d1dp1+uzBI3dXTSr6v6Yn7f/55RveTOnoOnq4e8YyqDLcYP78+Vnr1q37X1xc/L+iouJ/ZnLK/3Qg3rhx4/+1a9d2QpXhBOxbtmx5Z2Rk9N/Y0uy/s7Pzf2Nj4/8e/j7/Q0ND/2/evPm3tbW1FFQtJrC3t9feu3cvWJNNqt9/c3Pz/1ZWVv8Dm7P/u7i4/F+1atX/CRMmeEOVY4LAwECD79+//4+JiflvZ2f3H+QSPz+//wEBAWD8/v37/yt6Ji83VdPkhWpBBRoaGgo/fvz4/+/fv//Pnj37/+TJEzB++vTp/79///4HgXvLt/xvjk1zhWrBBBcvXjwNVokFPLx5+/+r5dv/szAzC0OVYwJgyGvcuXPnOVQPHABd8rGvpiHz8rQl5yamF+ZDlWMHdXV1x+bOnQuKuiNAvGvevHn/Gxsbb0OlGaSFRVWBFCuEhwX0JCc/XVxQ8L8zLm5+W3Jy87zs7P9T0tP/AqVYICoIgIlmZjUH3N0fdBkbx1Xp6joD2TemmZvPhUoTB3hZWfmgTAYuFhbs0QYGDAwA2qQRBB7D/0YAAAAASUVORK5CYII=" InformativeScreenshot="b64bff247abca222c980137a1c0ddb00.jpg" Selector="&lt;html app='chrome.exe' title='Sales Opportunities' /&gt;" Title="Sales Opportunities" Url="https://www.rpasamples.com/opportunities" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+      <Sequence sap:VirtualizedContainerService.HintSize="704,1014" sap2010:WorkflowViewState.IdRef="Sequence_14">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="sc:IEnumerable" Name="queueItems" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="QueueName" FilterStrategy="Equals" FolderPath="luisfilhopastura@terra.com.br's workspace" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="All" QueueName="FilaReDesign" Result="[queueItems]" />
+        <ui:BuildDataTable DataTable="[tabelaDeDados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="450,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Column-0&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Account_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Country&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Opportunity_x0020_Owner&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Stage&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Quantity&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Unit_x0020_Sales_x0020_Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Total_x0020_Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;List_x0020_Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="450,443" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[queueItems]">
+          <ui:ForEach.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,297" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {&#xD;&#xA;&#x9;currentQueueItem.SpecificContent(&quot;Column-0&quot;).ToString,&#xD;&#xA;    currentQueueItem.SpecificContent(&quot;Account Name&quot;).ToString,&#xD;&#xA;    currentQueueItem.SpecificContent(&quot;Country&quot;).ToString,&#xD;&#xA;    currentQueueItem.SpecificContent(&quot;Opportunity Owner&quot;).ToString,&#xD;&#xA;    currentQueueItem.SpecificContent(&quot;Stage&quot;).ToString,&#xD;&#xA;    currentQueueItem.SpecificContent(&quot;Quantity&quot;).ToString,&#xD;&#xA;    currentQueueItem.SpecificContent(&quot;Unit Sales Price&quot;).ToString,&#xD;&#xA;    currentQueueItem.SpecificContent(&quot;Total Price&quot;).ToString,&#xD;&#xA;    currentQueueItem.SpecificContent(&quot;List Price&quot;).ToString&#xD;&#xA;}]" DataTable="[tabelaDeDados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="354,209" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+              </Sequence>
+            </ActivityAction>
+          </ui:ForEach.Body>
+        </ui:ForEach>
+        <ui:FilterDataTable OutputDataTable="{x:Null}" DataTable="[tabelaDeDados]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="450,184" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" SelectColumnsMode="Remove">
+          <ui:FilterDataTable.Filters>
+            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                <ui:FilterOperationArgument.Column>
+                  <InArgument x:TypeArguments="x:Int32">[2]</InArgument>
+                </ui:FilterOperationArgument.Column>
+                <ui:FilterOperationArgument.Operand>
+                  <InArgument x:TypeArguments="x:String">["USA"]</InArgument>
+                </ui:FilterOperationArgument.Operand>
+              </ui:FilterOperationArgument>
+              <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                <ui:FilterOperationArgument.Column>
+                  <InArgument x:TypeArguments="x:Int32">[2]</InArgument>
+                </ui:FilterOperationArgument.Column>
+                <ui:FilterOperationArgument.Operand>
+                  <InArgument x:TypeArguments="x:String">["Germany"]</InArgument>
+                </ui:FilterOperationArgument.Operand>
+              </ui:FilterOperationArgument>
+            </scg:List>
+          </ui:FilterDataTable.Filters>
+          <ui:FilterDataTable.SelectColumns>
+            <scg:List x:TypeArguments="InArgument" Capacity="4">
+              <x:Null />
+            </scg:List>
+          </ui:FilterDataTable.SelectColumns>
+        </ui:FilterDataTable>
+      </Sequence>
+      <Sequence sap:VirtualizedContainerService.HintSize="704,4393" sap2010:WorkflowViewState.IdRef="Sequence_17">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Exercício DEV - UIPATH" sap:VirtualizedContainerService.HintSize="642,4282" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="608,4042" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tabelaDeDados]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="546,3952" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="512,3765" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ID'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[row(&quot;Column-0&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="b6633682-2afb-49d4-8a52-084dc17acf51" CvElementArea="660, 541, 302, 35" CvType="InputBox" DesignTimeRectangle="665, 551, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' tag='DIV' type='' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="c76adaa6-c003-4b58-ab20-50a670349f54" InformativeScreenshot="63b448c35887a5bd5e4517e163b2debc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="b6633682-2afb-49d4-8a52-084dc17acf51" CvTextArea="664, 498, 16, 15" CvTextArgument="ID" CvType="Text" DesignTimeRectangle="665, 495, 14, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' type='' class='M7eMe' aaname='ID' check:innerText='ID' /&gt;" Guid="81483c9d-196e-4779-a522-b28959330aa3" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Account Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[row(&quot;Account Name&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="b6633682-2afb-49d4-8a52-084dc17acf51" CvElementArea="659, 691, 302, 35" CvType="InputBox" DesignTimeRectangle="665, 701, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="864f5f98-a0ce-415d-b2f1-3beadec763b8" InformativeScreenshot="7ee61722e7cde1ea7a7c8aed8fc8362f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="b6633682-2afb-49d4-8a52-084dc17acf51" CvTextArea="663, 648, 108, 15" CvTextArgument="Account Name" CvType="Text" DesignTimeRectangle="665, 645, 105, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='i5' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i5' tag='SPAN' type='' class='M7eMe' aaname='Account Name' check:innerText='Account Name' /&gt;" Guid="f7d6ad10-f885-4992-a463-f19980a59415" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Country'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[row(&quot;Country&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="b6633682-2afb-49d4-8a52-084dc17acf51" CvElementArea="659, 842, 302, 34" CvType="InputBox" DesignTimeRectangle="665, 851, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='3' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="2d7b105e-e7d1-4399-967e-2f583178b390" InformativeScreenshot="2ae2823233e2277a0f2909711691fafe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="b6633682-2afb-49d4-8a52-084dc17acf51" CvTextArea="664, 798, 57, 18" CvTextArgument="Country" CvType="Text" DesignTimeRectangle="665, 795, 55, 24" FullSelectorArgument="&lt;webctrl parentid='i9' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i9' tag='SPAN' type='' class='M7eMe' aaname='Country' check:innerText='Country' /&gt;" Guid="aa47ac5b-1082-446d-ba91-7e9b74fb5de5" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Quantity'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[row(&quot;Quantity&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="b6633682-2afb-49d4-8a52-084dc17acf51" CvElementArea="659, 990, 303, 36" CvType="InputBox" DesignTimeRectangle="665, 1001, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='4' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="177ccc82-9bfa-4c0a-8aa4-a91dc4d1264e" InformativeScreenshot="436308c0d48d1f1ff306ad86ae732a07.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="b6633682-2afb-49d4-8a52-084dc17acf51" CvTextArea="664, 948, 60, 18" CvTextArgument="Quantity" CvType="Text" DesignTimeRectangle="665, 945, 59, 24" FullSelectorArgument="&lt;webctrl parentid='i13' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i13' tag='SPAN' type='' class='M7eMe' aaname='Quantity' check:innerText='Quantity' /&gt;" Guid="766d73fc-d1ae-4f3b-9856-9d37c199c93f" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Stage'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[row(&quot;Stage&quot;).ToString]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="52bdfc33-a4c5-472f-928f-fce7fdc5d4ff" CvElementArea="659, 342, 303, 35" CvType="InputBox" DesignTimeRectangle="665, 351, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='5' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="41c42e34-2096-4564-be20-d056fce77b74" InformativeScreenshot="004ad550be60f7e987c1e86f3a7986a7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="52bdfc33-a4c5-472f-928f-fce7fdc5d4ff" CvTextArea="664, 298, 42, 18" CvTextArgument="Stage" CvType="Text" DesignTimeRectangle="665, 295, 40, 24" FullSelectorArgument="&lt;webctrl parentid='i17' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i17' tag='SPAN' type='' class='M7eMe' aaname='Stage' check:innerText='Stage' /&gt;" Guid="cfd38ed5-4482-44d8-ba59-2d7c96fa69c6" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Opportunity Owner'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="52bdfc33-a4c5-472f-928f-fce7fdc5d4ff" CvElementArea="660, 492, 302, 34" CvType="InputBox" DesignTimeRectangle="665, 501, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='6' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="8e51e171-2866-42b4-88a9-9dd5e8f8ca80" InformativeScreenshot="312eeabc67d22d455864604ed7cf68ae.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="52bdfc33-a4c5-472f-928f-fce7fdc5d4ff" CvTextArea="664, 448, 134, 18" CvTextArgument="Opportunity Owner" CvType="Text" DesignTimeRectangle="665, 445, 133, 24" FullSelectorArgument="&lt;webctrl parentid='i21' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='i21' tag='SPAN' type='' class='M7eMe' aaname='Opportunity Owner' check:innerText='Opportunity Owner' /&gt;" Guid="d4ab16a7-83d8-409a-8e78-2e9c10d1ecc1" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'MoedaA moeda'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[System.Text.RegularExpressions.Regex.Replace(row(&quot;Unit Sales Price&quot;).ToString, &quot;[^A-Za-z]&quot;, &quot;&quot;)]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="52bdfc33-a4c5-472f-928f-fce7fdc5d4ff" CvElementArea="661, 669, 300, 33" CvType="InputBox" DesignTimeRectangle="665, 677, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='7' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="0cab87b7-296e-40c5-b1b8-0891401064bb" InformativeScreenshot="09b456eb01f767b0532688f973b278e6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="665, 595, 231, 50" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='16' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='M4DNQ' tag='DIV' aaname='' check:innerText='Moeda&amp;#xD;&amp;#xA;A moeda do preço a ser cadastrado' /&gt;" Guid="f454acb5-e7ce-43e1-94d4-a0704c34c4d3" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <ui:IfElseIfV2 Condition="[CDbl(System.Text.RegularExpressions.Regex.Replace(row(&quot;Total Price&quot;).ToString, &quot;[^\d.,]&quot;, &quot;&quot;)) &gt; 10000]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="450,826" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+                          <ui:IfElseIfV2.Else>
+                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Não'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="bb74893a-1ab0-40d5-95c5-9428d3326126" CvElementArea="663, 359, 24, 25" CvType="RadioButton" DesignTimeRectangle="665, 361, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='i36' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='i36' tag='DIV' class='AB7Lab Id5V1' aaname='' /&gt;" Guid="dbac3af4-665b-47d4-86f5-e3b890bee562" InformativeScreenshot="57b5c85530c5e01cd26f69b77cee89d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="bb74893a-1ab0-40d5-95c5-9428d3326126" CvTextArea="696, 363, 28, 14" CvTextArgument="Nao" CvType="Text" DesignTimeRectangle="697, 360, 26, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Não' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Não' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' check:innerText='Não' /&gt;" Guid="4f705d97-3dc3-4ada-8c3f-63c46b56dfe3" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                            </Sequence>
+                          </ui:IfElseIfV2.Else>
+                          <ui:IfElseIfV2.ElseIfs>
+                            <sc1:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
+                          </ui:IfElseIfV2.ElseIfs>
+                          <ui:IfElseIfV2.Then>
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,304" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sim'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="bb74893a-1ab0-40d5-95c5-9428d3326126" CvElementArea="662, 318, 25, 25" CvType="RadioButton" DesignTimeRectangle="665, 321, 20, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='i33' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='i33' tag='DIV' class='AB7Lab Id5V1' aaname='' /&gt;" Guid="279a2d8d-6352-43c2-b458-6d187b9a6faa" InformativeScreenshot="a8285e197cc1ee35e5d7ba381eac5f6d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="bb74893a-1ab0-40d5-95c5-9428d3326126" CvTextArea="695, 323, 27, 14" CvTextArgument="Sim" CvType="Text" DesignTimeRectangle="697, 320, 25, 22" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sim' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sim' tag='SPAN' type='' class='aDTYNe snByac OvPDhc OIC90c' check:innerText='Sim' /&gt;" Guid="ccea06a2-de5c-463c-82c4-4b01ac6af1a6" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                            </Sequence>
+                          </ui:IfElseIfV2.Then>
+                        </ui:IfElseIfV2>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Unit Sales'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[System.Text.RegularExpressions.Regex.Replace(row(&quot;Unit Sales Price&quot;).ToString, &quot;[^\d.,]&quot;, &quot;&quot;)]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="cf7b7af5-74e1-461c-96c1-00a8918c577e" CvElementArea="660, 427, 302, 33" CvType="InputBox" DesignTimeRectangle="665, 435, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='8' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="cb71c6d6-a401-489d-968b-ac021322fae8" InformativeScreenshot="d1e2225dc903d336f59fa2db38b9ce48.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="665, 353, 114, 50" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='21' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='M4DNQ' tag='DIV' aaname='' check:innerText='Unit Sales Price&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Apenas o numero' /&gt;" Guid="1aca7a70-feb8-404b-8171-9714f6816e16" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Total PriceApenas'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,286" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[System.Text.RegularExpressions.Regex.Replace(row(&quot;Total Price&quot;).ToString, &quot;[^\d.,]&quot;, &quot;&quot;)]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="cf7b7af5-74e1-461c-96c1-00a8918c577e" CvElementArea="660, 602, 302, 34" CvType="InputBox" DesignTimeRectangle="665, 611, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='9' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="9cea2267-a492-4bdd-9272-4448a613a2a0" InformativeScreenshot="78550c23ee6d8119b4ed715372388ae3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="665, 529, 114, 50" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='23' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='M4DNQ' tag='DIV' aaname='' check:innerText='Total Price&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Apenas o número' /&gt;" Guid="269ee9cd-6c2a-466a-8a28-b2734bad288d" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'List PriceApenas'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="450,277" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="8055551c-7e3b-4d2f-b04c-45ab6c56533a" Text="[System.Text.RegularExpressions.Regex.Replace(row(&quot;List Price&quot;).ToString, &quot;[^\d.,]&quot;, &quot;&quot;)]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" CVScreenId="cf7b7af5-74e1-461c-96c1-00a8918c577e" CvElementArea="659, 778, 303, 34" CvType="InputBox" DesignTimeRectangle="665, 787, 84, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sua resposta' idx='10' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sua resposta' type='' tag='DIV' class='ndJi5d snByac' check:innerText='Sua resposta' /&gt;" Guid="c739e437-1f9c-4c0e-b8c6-dc6e00c5923c" InformativeScreenshot="7a22c815a1305300001b34c596dcb461.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="665, 705, 114, 50" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='25' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='M4DNQ' tag='DIV' aaname='' check:innerText='List Price&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Apenas o numero' /&gt;" Guid="204b8253-84b7-4a0b-a0eb-87eb70243210" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                          <uix:NTypeInto.VerifyOptions>
+                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            </uix:VerifyExecutionTypeIntoOptions>
+                          </uix:NTypeInto.VerifyOptions>
+                        </uix:NTypeInto>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="9b8e533f191e66375a78fda30145a6c9.jpg" Selector="&lt;html app='chrome.exe' title='Exercício DEV - UIPATH' /&gt;" Title="Exercício DEV - UIPATH" Url="https://docs.google.com/forms/d/e/1FAIpQLSe8bucitMAeb-ELVbYmYodNJsgQs5P5wRXHT68lqFx79a6-Qg/viewform" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+    </Sequence>
+  </Sequence>
+</Activity>
